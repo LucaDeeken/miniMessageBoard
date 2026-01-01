@@ -6,7 +6,7 @@ body {
 
 body {
   font-family: "Press Start 2P", cursive;
-  background-color: rgb(236, 200, 233);
+  background-color: rgb(238, 212, 236);
   display: grid;
   grid-template-rows: 100px auto;
   justify-content: center;
@@ -30,13 +30,15 @@ main {
 .contentArea {
   display: grid;
   gap: 25px;
-  border-radius: 30px;
+  border: 4px solid rgba(7, 9, 105, 1);
+  border-radius: 5px;
   width: 530px;
-  padding: 5.5vw;
+  padding: 3vw 3vw;
   margin: 100px 0px;
-  max-height: 45vh;
+  max-height: 55vh;
   overflow: auto;
-  background-color: rgb(239, 226, 238);
+  background-color: rgb(248, 239, 239);
+  box-shadow: 10px 10px 8px rgba(7, 9, 105, 1);
 }
 
 .formSection {
