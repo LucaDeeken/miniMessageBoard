@@ -8,9 +8,9 @@ body {
   font-family: "Press Start 2P", cursive;
   background-color: rgb(238, 212, 236);
   display: grid;
-  grid-template-rows: 100px auto;
+  grid-template-rows: 90px auto;
   justify-content: center;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 header {
@@ -18,42 +18,81 @@ header {
   grid-row: 1/2;
   justify-content: center;
   font-family: "DotGothic16", sans-serif;
-  font-size: 30px;
-  align-self: center;
+  font-size: 28px;
 }
 
 main {
+  display: grid;
   grid-row: 2/3;
   font-size: 11px;
+  justify-content: center;
+  align-items: center;
 }
 
 .contentArea {
   display: grid;
   gap: 25px;
   border: 4px solid rgba(7, 9, 105, 1);
-  border-radius: 5px;
+  border-radius: 20px;
   width: 530px;
-  padding: 3vw 3vw;
-  margin: 100px 0px;
+  padding: 3.5vw 3.5vw;
   max-height: 55vh;
   overflow: auto;
-  background-color: rgb(248, 239, 239);
-  box-shadow: 10px 10px 8px rgba(7, 9, 105, 1);
+  background-color: rgb(238, 212, 236);
+  box-shadow:
+    rgb(85, 91, 255) 0px 0px 0px 4px,
+    rgb(31, 193, 27) 0px 0px 0px 8px,
+    rgb(255, 217, 19) 0px 0px 0px 12px,
+    rgb(255, 156, 85) 0px 0px 0px 16px,
+    rgb(255, 85, 85) 0px 0px 0px 20px;
 }
 
 .formSection {
-  border: 2px solid black;
+  background-color: white;
+  border: 3px solid black;
   padding: 1vw 3vw;
   border-radius: 10px;
+  display: grid;
 }
 
 .formSection h2 {
   text-align: center;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 2px solid silver;
+  border-radius: 10px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+input {
+  height: 45px;
+  padding: 5px;
+}
+
+textarea {
+  height: 85px;
+  padding: 10px;
+}
+
+.sendBtn {
+  width: 50%;
+  height: 40px;
+  align-self: center;
+}
 /* MESSAGE */
 .messageSection {
-  border: 2px solid black;
+  background-color: white;
+  border: 3px solid black;
   border-radius: 10px;
   padding: 1vw 3vw;
 }
@@ -62,8 +101,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+  border-bottom: 2px solid silver;
 }
 
+.messageBox {
+  padding: 10px 20px;
+}
 @media (max-width: 800px) {
   .contentArea {
     width: 420px;
