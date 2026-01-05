@@ -86,7 +86,7 @@ body {
   display: grid;
   grid-template-rows: 200px auto;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.7rem;
 }
 
 header {
