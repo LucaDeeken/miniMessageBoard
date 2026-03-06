@@ -1,5 +1,5 @@
 require("dotenv").config();
-const pool = require("./pool"); // dein pool.js
+const pool = require("./pool");
 
 const SQL = `
 INSERT INTO messages (username, message)
@@ -15,7 +15,7 @@ async function main() {
   } catch (err) {
     console.error(err);
   } finally {
-    await pool.end(); // Verbindung schließen
+    await pool.end();
   }
 }
 
