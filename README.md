@@ -20,3 +20,4 @@ Users can view messages and submit new ones through a simple form.
 
 ## Live-Preview
 -> https://minimessageboard-hko7.onrender.com/
+(FREE-DATABASE EXPIRED, so it doesn't connect at the moment)
